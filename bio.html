@@ -1,0 +1,129 @@
+<html>
+
+
+<head>
+
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Caleb Woodward</title>
+
+</head>
+
+
+<body class="page">
+
+  <div class="overall">
+
+    <div class="header">
+
+      <div class="headL">
+        <p></p>
+        <p  id="title">➝ Caleb Woodward</p>
+
+
+        <p></p>
+
+      </div>
+
+      <div class="headR">
+        <p id="clockbox"></p>
+
+      </div>
+
+    </div>
+
+    <div class="pager">
+
+      <div class="links">
+        <br>
+        <ul style="list-style-type:none">
+          <a href="index.html"><li>List</li></a>
+          <a href="gallery.html"><li>Gallery</li></a>
+          <br>
+          <ul style="list-style-type:none">
+
+            <a href="objects.html"><li>Objects</li></a>
+            <a href="graphics.html"><li>Graphics</li></a>
+            <a href="garments.html"><li>Garments</li></a>
+            <a href="others.html"><li>Others</li></a>
+          </ul>
+          <br>
+
+          <a href="bio.html"><li>Bio :</li></a>
+          <a href="cv.html"><li>CV</li></a>
+
+          <a href="directory.html"><li>Directory</li></a>
+          <br>
+          <li id="external"><a href="https://instagram.com/www_wdwrd" target="blank" rel="noreferrer noopener">ig</a></li>
+          <li id="external"><a href="mailto:calebwws@virginmedia.com">email</a></li>
+
+        </ul>
+
+
+      </div>
+
+
+    <div>
+
+
+    <div class="content">
+
+      <div class="twosplit">
+        <p>Caleb Woodward</p>
+        <p></p>
+        <p></p>
+        <p>Caleb Woodward is a Multidiciplinary Designer & Artist based in London. He is currently studying Design BA at Goldsmiths. In the past he has studied a 3D Design & Architecture Foundation at Central st. Martins.</p>
+
+        <p></p>
+        <p></p>
+
+        
+
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <script type="text/javascript">
+    var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var tmonth=["01","02","03","04","05","06","07","08","09","10","11","12"];
+
+    function GetClock(){
+    var d=new Date();
+    var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+    var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+    if(nhour==0){ap=" AM";nhour=12;}
+    else if(nhour<12){ap=" AM";}
+    else if(nhour==12){ap=" PM";}
+    else if(nhour>12){ap=" PM";nhour-=12;}
+
+    if(nmin<=9) nmin="0"+nmin;
+    if(nsec<=9) nsec="0"+nsec;
+
+    if(ndate<=9) ndate="0"+ndate;
+
+    // var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+    let clocktext=`${tday[nday]} <br>${nyear} ${tmonth[nmonth]} ${ndate}  <br>${nhour}:${nmin}:${nsec} ${ap}`;
+    document.getElementById('clockbox').innerHTML=clocktext;
+    }
+
+    GetClock();
+    setInterval(GetClock,1000);
+
+
+  </script>
+</div>
+
+<div class="footer">
+  <p>: : Copyright © CALEB WOODWARD 2021 - All rights reserved. : :</p>
+</div>
+
+</body>
+
+</html>
