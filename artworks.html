@@ -1,0 +1,165 @@
+<html>
+
+
+<head>
+
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Caleb Woodward</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+
+<body class="page">
+
+  <div class="overall">
+
+    <div class="header">
+
+      <div class="headL">
+        <p></p>
+        <p id="title">➝ Caleb Woodward </p>
+
+        <p></p>
+
+      </div>
+
+      <div class="headR">
+        <p id="clockbox"></p>
+
+      </div>
+
+    </div>
+
+    <div class="pager">
+
+      <div class="links">
+        <br>
+        <ul style="list-style-type:none">
+          <a href="index.html"><li>List</li></a>
+          <a href="gallery.html"><li>Gallery</li></a>
+          <br>
+          <ul style="list-style-type:none">
+
+            <a href="objects.html"><li>Objects</li></a>
+            <a href="graphics.html"><li>Graphics</li></a>
+            <a href="garments.html"><li>Garments</li></a>
+            <a href="others.html"><li>Others :</li></a>
+          </ul>
+          <br>
+
+
+          <a href="bio.html"><li>Bio</li></a>
+          <a href="cv.html"><li>CV</li></a>
+
+          <a href="memo.html"><li>Memo</li></a>
+          <a href="artworks.html"><li>Artworks :</li></a>
+
+          <a href="directory.html"><li>Directory</li></a>
+          <br>
+          <li id="external"><a href="https://instagram.com/caleb_wdwrd" target="blank" rel="noreferrer noopener">ig</a></li>
+          <li id="external"><a href="mailto:info@caleb-woodward.net">email</a></li>
+
+        </ul>
+
+
+      </div>
+
+
+    <div>
+
+
+    <div class="content">
+      <p>Artwork & Assorted</p>
+      <div class="threeSplit">
+
+        <a href="image/artwork/radiant field.png"><img src="image/artwork/radiant field.png"></img></a>
+        <a href="image/artwork/tetra.png"><img src="image/artwork/tetra.png"></img></a>
+        <a href="image/artwork/sketch 01.png"><img src="image/artwork/sketch 01.png"></img></a>
+
+        <a href="image/artwork/spiral logo.png"><img src="image/artwork/spiral logo.png"></img></a>
+        <a href="image/artwork/debris whale.png"><img src="image/artwork/debris whale.png"></img></a>
+        <a href="image/artwork/sketch 02.png"><img src="image/artwork/sketch 02.png"></img></a>
+
+        <a href="image/artwork/mechanic.jpg"><img src="image/artwork/mechanic.jpg"></img></a>
+        <a href="image/artwork/malkovich.jpg"><img src="image/artwork/malkovich.jpg"></img></a>
+        <a href="image/artwork/playing.png"><img src="image/artwork/playing.png"></img></a>
+
+        <a href="image/artwork/christmas.jpg"><img src="image/artwork/christmas.jpg"></img></a>
+        <a href="image/artwork/parcel.jpg"><img src="image/artwork/parcel.jpg"></img></a>
+        <a href="image/artwork/amputee.jpg"><img src="image/artwork/amputee.jpg"></img></a>
+
+        <a href="image/artwork/radish field.png"><img src="image/artwork/radish field.png"></img></a>
+        <a href="image/artwork/sketch 03.jpg"><img src="image/artwork/sketch 03.jpg"></img></a>
+        <a href="image/artwork/rabbits.png"><img src="image/artwork/rabbits.png"></img></a>
+
+        <a href="image/artwork/rabbits 2.jpg"><img src="image/artwork/rabbits 2.jpg"></img></a>
+        <a href="image/artwork/sketch 04.jpg"><img src="image/artwork/sketch 04.jpg"></img></a>
+        <a href="image/artwork/hand.png"><img src="image/artwork/hand.png"></img></a>
+
+        <a href="image/artwork/oil station.png"><img src="image/artwork/oil station.png"></img></a>
+        <a href="image/artwork/sketch 05.jpg"><img src="image/artwork/sketch 05.jpg"></img></a>
+        <a href="image/artwork/person.png"><img src="image/artwork/person.png"></img></a>
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <script type="text/javascript">
+    var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var tmonth=["01","02","03","04","05","06","07","08","09","10","11","12"];
+
+    function GetClock(){
+    var d=new Date();
+    var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+    var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+    if(nhour==0){ap=" AM";nhour=12;}
+    else if(nhour<12){ap=" AM";}
+    else if(nhour==12){ap=" PM";}
+    else if(nhour>12){ap=" PM";nhour-=12;}
+
+    if(nmin<=9) nmin="0"+nmin;
+    if(nsec<=9) nsec="0"+nsec;
+
+    if(ndate<=9) ndate="0"+ndate;
+
+    // var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+    let clocktext=`${tday[nday]} <br>${nyear} ${tmonth[nmonth]} ${ndate}  <br>${nhour}:${nmin}:${nsec} ${ap}`;
+    document.getElementById('clockbox').innerHTML=clocktext;
+    }
+
+    GetClock();
+    setInterval(GetClock,1000);
+
+
+  </script>
+</div>
+
+<div class="footer">
+  <p>: : Copyright © CALEB WOODWARD 2021 - All rights reserved. : :</p>
+</div>
+
+</body>
+
+</html>

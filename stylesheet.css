@@ -272,3 +272,31 @@ a{
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
+
+
+.threeSplit {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.threeSplit img{
+  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  border-width:3px;
+  border-style:solid;
+  border-color:white;
+  object-fit: cover;
+  float:left;
+}
+
+
+.threeSplit img:hover{
+
+  filter: grayscale(100%);
+  opacity:70%;
+
+}
