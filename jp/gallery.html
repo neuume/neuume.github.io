@@ -1,0 +1,169 @@
+<html>
+
+
+<head>
+
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Caleb Woodward</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+
+<body class="page">
+
+  <div class="overall">
+
+    <div class="header">
+
+      <div class="headL">
+        <p></p>
+        <p id="title">➝ Caleb Woodward </p>
+        <p id="info" style="color:white;">.</p>
+        <p>Language: <u><a href="../gallery.html">en</a></u> /<a href="../jp/gallery.html"> jp </a></p>
+
+
+        <p></p>
+
+      </div>
+
+      <div class="headR">
+        <p id="clockbox"></p>
+
+      </div>
+
+    </div>
+
+    <div class="pager">
+
+      <div class="links">
+        <br>
+        <ul style="list-style-type:none">
+          <a href="index.html"><li>List</li></a>
+          <a href="gallery.html"><li>Gallery :</li></a>
+          <br>
+          <ul style="list-style-type:none">
+
+            <a href="objects.html"><li>Objects</li></a>
+            <a href="graphics.html"><li>Graphics</li></a>
+            <a href="structures.html"><li>Structures</li></a>
+            <a href="garments.html"><li>Garments</li></a>
+            <a href="others.html"><li>Others</li></a>
+          </ul>
+          <br>
+
+          <a href="bio.html"><li>Bio</li></a>
+          <a href="cv.html"><li>CV</li></a>
+          <a href="memo.html"><li>Memo</li></a>
+
+
+          <a href="directory.html"><li>Directory</li></a>
+          <br>
+          <li id="external"><a href="https://instagram.com/caleb_wdwrd" target="blank" rel="noreferrer noopener">ig</a></li>
+          <li id="external"><a href="mailto:info@caleb-woodward.net">email</a></li>
+
+        </ul>
+
+
+      </div>
+
+
+    <div>
+
+
+    <div class="content">
+
+      <div class="theGrid">
+
+
+
+
+        <p>GALLERY</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <a href="javascript:void(0);" onclick="window.open('project/Radiofield.html','14','width=600,height=700')" rel="noreferrer noopener"><img src="../image/gallery/radiofield.png"></img></a>
+        <a href="javascript:void(0);" onclick="window.open('project/machineglasses.html','14','width=600,height=700')" rel="noreferrer noopener"><img src="../image/gallery/machineglasses.png"></img></a>
+
+        <a href="javascript:void(0);" onclick="window.open('project/radiometer.html','1','width=600,height=700')" rel="noreferrer noopener"><img src="../image/gallery/radiometer.gif"></img></a>
+
+
+
+
+        <a href="javascript:void(0);" onclick="window.open('project/windowclock.html','2','width=600,height=700')" rel="noreferrer noopener"><img src="../image/gallery/window.png"></img></a>
+        <a href="javascript:void(0);" onclick="window.open('project/boltbook.html','13','width=600,height=700')" rel="noreferrer noopener"><img src="../image/gallery/boltbook.png"></img></a>
+        <a href="javascript:void(0);" onclick="window.open('project/jewellery.html','3','width=600,height=700')" rel="noreferrer noopener"><img src="../image/gallery/jewellery.png"></img></a>
+
+        <a href="javascript:void(0);" onclick="window.open('project/buildit.html','4','width=600,height=700')" rel="noreferrer noopener"><img src="../image/gallery/buildit.png"></img></a>
+        <a href="javascript:void(0);" onclick="window.open('project/comfort-clothing.html','9','width=600,height=700')" rel="noreferrer noopener"><img src="../image/gallery/comfortseeking.png"></img></a>
+
+        <a href="javascript:void(0);" onclick="window.open('project/antenna.html','10','width=600,height=700')" rel="noreferrer noopener"><img src="../image/antenna/cover for radio show-02.png"></img></a>
+
+
+        <a href="javascript:void(0);" onclick="window.open('project/objects on parade.html','5','width=600,height=700')" rel="noreferrer noopener"><img src="../image/water-tower/Tower 8.gif"></img></a>
+        <a href="javascript:void(0);" onclick="window.open('project/greenline.html','6','width=600,height=700')" rel="noreferrer noopener"><img src="../image/gallery/greenline.png"></img></a>
+        <a href="javascript:void(0);" onclick="window.open('project/logo.html','7','width=600,height=700')" rel="noreferrer noopener"><img src="../image/gallery/logo.png"></img></a>
+
+        <a href="javascript:void(0);" onclick="window.open('project/station-searching.html','11','width=600,height=700')" rel="noreferrer noopener"><img src="../image/gallery/station searching.png"></img></a>
+
+        <a href="javascript:void(0);" onclick="window.open('project/dogs-wall.html','12','width=600,height=700')" rel="noreferrer noopener"><img src="../image/gallery/dogs wall.png"></img></a>
+        <img src="../image/gallery/blank.png"></img>
+        <img src="../image/gallery/blank.png"></img>
+
+        <img src="../image/gallery/blank.png"></img>
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <script type="text/javascript">
+    var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var tmonth=["01","02","03","04","05","06","07","08","09","10","11","12"];
+
+    function GetClock(){
+    var d=new Date();
+    var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+    var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+    if(nhour==0){ap=" AM";nhour=12;}
+    else if(nhour<12){ap=" AM";}
+    else if(nhour==12){ap=" PM";}
+    else if(nhour>12){ap=" PM";nhour-=12;}
+
+    if(nmin<=9) nmin="0"+nmin;
+    if(nsec<=9) nsec="0"+nsec;
+
+    if(ndate<=9) ndate="0"+ndate;
+
+    // var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+    let clocktext=`${tday[nday]} <br>${nyear} ${tmonth[nmonth]} ${ndate}  <br>${nhour}:${nmin}:${nsec} ${ap}`;
+    document.getElementById('clockbox').innerHTML=clocktext;
+    }
+
+    GetClock();
+    setInterval(GetClock,1000);
+
+
+  </script>
+</div>
+
+<div class="footer">
+  <p>: : Copyright © CALEB WOODWARD 2023 - All rights reserved. : :</p>
+</div>
+
+</body>
+
+</html>
