@@ -110,7 +110,7 @@ a{
 }
 
 .dropcontent {
-  
+
   display: none;
   overflow: hidden;
   background-color: #fff;
@@ -129,4 +129,9 @@ a{
 
   display:grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.threeSplit {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
