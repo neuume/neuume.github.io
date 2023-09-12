@@ -22,9 +22,9 @@
 
       <div class="headL">
         <p></p>
-        <p id="title">➝ Caleb Woodward </p>
+        <p id="title">➝ ケイレブ・ウッドワード</p>
         <p id="info" style="color:white;">.</p>
-        <p>Language: <u><a href="../others.html">en</a></u> /<a href="../jp/others.html"> jp </a></p>
+        <p>国語: <u><a href="../others.html">en</a></u> /<a href="../jp/others.html"> jp </a></p>
 
 
         <p></p>
@@ -43,28 +43,26 @@
       <div class="links">
         <br>
         <ul style="list-style-type:none">
-          <a href="index.html"><li>List</li></a>
-          <a href="gallery.html"><li>Gallery</li></a>
+          <a href="index.html"><li>リスト</li></a>
+          <a href="gallery.html"><li>ギャラリー</li></a>
           <br>
           <ul style="list-style-type:none">
 
-            <a href="objects.html"><li>Objects</li></a>
-            <a href="graphics.html"><li>Graphics</li></a>
-            <a href="structures.html"><li>Structures</li></a>
-            <a href="garments.html"><li>Garments</li></a>
-            <a href="others.html"><li>Others :</li></a>
+            <a href="objects.html"><li>オブジェクト</li></a>
+            <a href="graphics.html"><li>グラフィック</li></a>
+            <a href="structures.html"><li>建築物</li></a>
+            <a href="garments.html"><li>服</li></a>
+            <a href="others.html"><li>その他 :</li></a>
           </ul>
           <br>
 
-          <a href="bio.html"><li>Bio</li></a>
-          <a href="cv.html"><li>CV</li></a>
-          <a href="memo.html"><li>Memo</li></a>
-
-
-          <a href="directory.html"><li>Directory</li></a>
+          <a href="bio.html"><li>プロファイル</li></a>
+          <a href="cv.html"><li>履歴書</li></a>
+          <a href="memo.html" ><li>メモ </li></a>
+          <a href="directory.html"><li>ディレクトリー</li></a>
           <br>
-          <li id="external"><a href="https://instagram.com/caleb_wdwrd" target="blank" rel="noreferrer noopener">ig</a></li>
-          <li id="external"><a href="mailto:info@caleb-woodward.net">email</a></li>
+          <li id="external"><a href="https://instagram.com/caleb_wdwrd" target="blank" rel="noreferrer noopener">インスタグラム</a></li>
+          <li id="external"><a href="mailto:info@caleb-woodward.net">メール</a></li>
 
         </ul>
 
@@ -80,24 +78,24 @@
       <div id="theList">
 
         <section>
-          <p> OTHERS</p>
+          <p> その他</p>
 
           <div class="listSplit">
-            <p>TITLE</p>
+            <p>名称</p>
             <p></p>
-            <p>YEAR</p>
+            <p>年</p>
           </div>
 
 
 
           <a href="javascript:void(0);" onclick="window.open('project/antenna.html','10','width=600,height=700')" rel="noreferrer noopener"><div class="listSplit">
-            <p>Rooftop Antenna</p>
+            <p>屋上アンテナ</p>
             <p></p>
-            <p> 2021</p>
+            <p> 2021 - 2023</p>
           </div></a>
 
           <a href="javascript:void(0);" onclick="window.open('project/station-searching.html','11','width=600,height=700')" rel="noreferrer noopener"><div class="listSplit">
-            <p>Station-Searching  (MV)</p>
+            <p>駅巡り  (MV)</p>
             <p></p>
             <p> 2021</p>
           </div></a>
@@ -120,7 +118,7 @@
 
 
   <script type="text/javascript">
-    var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var tday=["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日"];
     var tmonth=["01","02","03","04","05","06","07","08","09","10","11","12"];
 
     function GetClock(){
@@ -128,10 +126,10 @@
     var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
     var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
 
-    if(nhour==0){ap=" AM";nhour=12;}
-    else if(nhour<12){ap=" AM";}
-    else if(nhour==12){ap=" PM";}
-    else if(nhour>12){ap=" PM";nhour-=12;}
+    if(nhour==0){ap=" 午前";nhour=12;}
+    else if(nhour<12){ap=" 午前";}
+    else if(nhour==12){ap=" 午後";}
+    else if(nhour>12){ap=" 午後";nhour-=12;}
 
     if(nmin<=9) nmin="0"+nmin;
     if(nsec<=9) nsec="0"+nsec;
