@@ -59,7 +59,7 @@ a{
   color: 555555;
   width:100%;
   height:50px;
-  
+
   text-align: center;
 
 
@@ -129,4 +129,10 @@ a{
 
   display:grid;
   grid-template-columns: 1fr 1fr;
+}
+
+
+.threeSplit {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
